@@ -1,0 +1,51 @@
+
+<h1>Notícias Gerais</h1>
+
+{% for noticia in noticias %}
+    <div>
+        <h2>{{ noticia.titulo }}</h2>
+        <p>{{ noticia.descricao }}</p>
+
+        {% if noticia.imagem %}
+            <img src="{{ noticia.imagem.url }}" width="200">
+        {% endif %}
+
+        <small>{{ noticia.criado_em }}</small>
+    </div>
+{% empty %}
+    <p>Nenhuma notícia no momento.</p>
+{% endfor %}
+
+<h1>Próximos Eventos</h1>
+
+{% for evento in futuros %}
+    <div>
+        <h2>{{ evento.titulo }}</h2>
+        <p>{{ evento.descricao }}</p>
+        <p>{{ evento.data_hora }}</p>
+        <p>{{ evento.local }}</p>
+
+        {% if evento.imagem %}
+            <img src="{{ evento.imagem.url }}" width="200">
+        {% endif %}
+    </div>
+{% empty %}
+    <p>Nenhum evento futuro.</p>
+{% endfor %}
+
+
+<h1>Eventos Realizados</h1>
+
+{% for evento in passados %}
+    <div>
+        <h2>{{ evento.titulo }}</h2>
+        <p>{{ evento.descricao }}</p>
+        <p>{{ evento.data_hora }}</p>
+        <p>{{ evento.local }}</p>
+        {% if evento.imagem %}
+            <img src="{{ evento.imagem.url }}" width="200">
+        {% endif %}
+    </div>
+{% empty %}
+    <p>Nenhum evento passado.</p>
+{% endfor %}
