@@ -41,13 +41,10 @@ A ONG Livro em Movimento atua na distribuição de livros para pessoas em situa�
 
 **Backend**
 - Django 5.2 — framework web Python, responsável pela API, banco de dados e painel admin
-- JsonResponse — respostas JSON para o frontend
 - django-cors-headers — controle de CORS entre frontend e backend
 - dj-database-url — configuração do banco via variável de ambiente
 - Cloudinary + django-cloudinary-storage — armazenamento de mídia em nuvem
-- WhiteNoise — servir arquivos estáticos em produção
-- PostgreSQL via psycopg — banco de dados em produção
-- SQLite — banco de dados em desenvolvimento local
+- SQLite — sistema gerenciador de banco de dados
 
 **Frontend**
 - React — biblioteca para construção da interface
