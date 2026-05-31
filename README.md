@@ -23,7 +23,7 @@ Responsáveis pelo desenvolvimento da interface do sistema, componentes visuais 
 
 ## Sobre o Projeto
 
-A ONG Livro em Movimento atua na distribuição de livros para pessoas em situação de vulnerabilidade. O site foi criado para divugação do projeto e para centralizar as formas de participação.
+A ONG Livro em Movimento atua na promoção da leitura, da educação e da cultura por meio de projetos e ações sociais. O site foi criado para divulgar as atividades da organização e centralizar as formas de participação da comunidade.
 
 ---
 
@@ -53,6 +53,6 @@ A ONG Livro em Movimento atua na distribuição de livros para pessoas em situa�
 - django-vite — integração entre o build do Vite e o Django
 
 **Deploy**
-- Vercel — hospedagem do frontend e do backend Django
+- Vercel — plataforma utilizada para hospedagem da aplicação.
 ---
 
